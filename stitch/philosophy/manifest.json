@@ -1,0 +1,16 @@
+{
+  "projectId": "12728716464709867907",
+  "screenId": "17d2310c7718487f8d643e8acf6aef67",
+  "files": {
+    "html": "stitch/philosophy/philosophy.html",
+    "screenshot": "stitch/philosophy/philosophy-screenshot.png",
+    "images": [
+      "stitch/philosophy/images/desert.jpg",
+      "stitch/philosophy/images/stone.jpg",
+      "stitch/philosophy/images/water.jpg",
+      "stitch/philosophy/images/elara.jpg",
+      "stitch/philosophy/images/julian.jpg",
+      "stitch/philosophy/images/amara.jpg"
+    ]
+  }
+}

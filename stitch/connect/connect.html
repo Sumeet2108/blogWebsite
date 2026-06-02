@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Submissions - Ruhaniyat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4; /* surface */
+            position: relative;
+        }
+        /* Sand-grain texture overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 9999;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#fbf9f4",
+                        "surface-container-highest": "#e4e2dd",
+                        "tertiary-container": "#693527",
+                        "surface-container": "#f0eee9",
+                        "outline-variant": "#bfc9c4",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#464743",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-primary-container": "#7ebdac",
+                        "inverse-primary": "#94d3c1",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "inverse-surface": "#30312e",
+                        "primary-fixed-dim": "#94d3c1",
+                        "primary-container": "#004d40",
+                        "on-tertiary-container": "#e89f8c",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#e4e2dd",
+                        "surface-container-high": "#eae8e3",
+                        "on-secondary-fixed": "#1b1c19",
+                        "surface-tint": "#29695b",
+                        "on-tertiary-fixed-variant": "#6d382a",
+                        "on-secondary-container": "#61615d",
+                        "on-background": "#1b1c19",
+                        "primary-fixed": "#afefdd",
+                        "on-primary-fixed-variant": "#065043",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb5a1",
+                        "surface-container-low": "#f5f3ee",
+                        "on-tertiary-fixed": "#370e04",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#3f4945",
+                        "surface-variant": "#e4e2dd",
+                        "primary": "#00342b",
+                        "secondary": "#5e5f5b",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "secondary-container": "#deddd8",
+                        "tertiary": "#4e2013",
+                        "surface-bright": "#fbf9f4",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#00201a",
+                        "outline": "#707975",
+                        "surface": "#fbf9f4",
+                        "on-surface": "#1b1c19"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "display": ["Newsreader", "serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body text-on-background min-h-screen flex flex-col pt-32">
+<nav class="bg-[#fbf9f4]/80 dark:bg-[#1b1c19]/80 backdrop-blur-xl docked full-width top-0 z-50 tonal transition using surface-container-low shadow-none flex justify-between items-center w-full px-12 py-8 max-w-screen-2xl mx-auto sticky">
+<a class="font-['Newsreader'] italic text-3xl text-[#00342b] dark:text-[#004d40]" href="../home/index.html">Ruhaniyat</a>
+<div class="hidden md:flex gap-12">
+<a class="text-[#00342b] dark:text-[#004d40] border-b border-[#00342b]/10 pb-1 hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out font-['Work_Sans'] text-sm uppercase tracking-widest" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../categories/categories.html">Visuals</a>
+</div>
+<a href="../search/search.html" class="text-[#00342b] dark:text-[#004d40] hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out">
+<span class="material-symbols-outlined">search</span>
+</a>
+</nav>
+<main class="flex-grow w-full max-w-screen-xl mx-auto px-6 md:px-10 pb-32">
+<header class="mb-24 mt-12 md:w-2/3 relative z-10">
+<h1 class="font-display text-5xl md:text-7xl font-light text-on-surface tracking-tight leading-tight mb-8">
+                Correspondences <br/>&amp; Inquiries
+            </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl font-light">
+                We welcome thoughtful inquiries, editorial suggestions, and pitches that align with the sanctuary's ethos. Please review our submission guidelines before reaching out.
+            </p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+<section class="lg:col-span-7 bg-surface-container-low rounded-xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-primary-fixed-dim rounded-full opacity-10 blur-3xl"></div>
+<h2 class="font-display text-3xl text-on-surface mb-8 relative z-10">Reach the Editors</h2>
+<form class="space-y-10 relative z-10" id="contact-form">
+<div id="form-message" style="display:none;" class="p-4 mb-4 rounded-md text-sm font-label"></div>
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body text-lg transition-colors placeholder-transparent" id="name" name="name" placeholder="Your Name" type="text" required/>
+<label class="absolute left-0 -top-3.5 text-on-surface-variant text-sm font-label transition-all peer-placeholder-shown:text-lg peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-primary" for="name">Your Name</label>
+</div>
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body text-lg transition-colors placeholder-transparent" id="email" name="email" placeholder="Email Address" type="email" required/>
+<label class="absolute left-0 -top-3.5 text-on-surface-variant text-sm font-label transition-all peer-placeholder-shown:text-lg peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-primary" for="email">Email Address</label>
+</div>
+<div class="relative">
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body text-lg transition-colors appearance-none" id="subject" name="subject" required>
+<option class="text-on-surface-variant" disabled="" selected="" value="">Select Inquiry Type</option>
+<option class="bg-surface text-on-surface" value="editorial">Editorial Pitch</option>
+<option class="bg-surface text-on-surface" value="general">General Correspondence</option>
+<option class="bg-surface text-on-surface" value="partnerships">Partnerships</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-4 text-on-surface-variant pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+<div class="relative">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body text-lg transition-colors placeholder-transparent resize-none" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+<label class="absolute left-0 -top-3.5 text-on-surface-variant text-sm font-label transition-all peer-placeholder-shown:text-lg peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-primary" for="message">Your Message</label>
+</div>
+<button class="bg-primary text-on-primary font-label text-sm uppercase tracking-wider py-4 px-8 rounded-md hover:opacity-90 transition-opacity w-full md:w-auto mt-4" type="submit" id="submit-btn">
+                        Send Dispatch
+                    </button>
+</form>
+</section>
+<section class="lg:col-span-5 flex flex-col justify-start">
+<div class="sticky top-40">
+<h2 class="font-display text-4xl text-on-surface mb-8">Submissions</h2>
+<div class="space-y-8">
+<article class="bg-surface-container-lowest p-8 rounded-lg">
+<h3 class="font-display text-2xl text-on-surface mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="menu_book">menu_book</span>
+                                Essays &amp; Longform
+                            </h3>
+<p class="font-body text-on-surface-variant leading-relaxed font-light">
+                                We seek deeply considered essays between 1,500 and 4,000 words. Pieces should explore the intersections of culture, ecology, and the human spirit. Avoid strictly academic writing; we favor narrative and reflective tones.
+                            </p>
+</article>
+<article class="bg-surface-container-lowest p-8 rounded-lg">
+<h3 class="font-display text-2xl text-on-surface mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="photo_camera">photo_camera</span>
+                                Visual Narratives
+                            </h3>
+<p class="font-body text-on-surface-variant leading-relaxed font-light">
+                                Photo essays should contain 10-15 high-resolution images accompanied by a cohesive statement (300-500 words). We lean towards analogue aesthetics, slow photography, and contemplative landscapes.
+                            </p>
+</article>
+<div class="mt-8 pt-8 border-t border-outline-variant/30">
+<p class="font-body text-sm text-on-surface-variant italic">
+                                Note: We currently review submissions on a rolling basis. Please allow up to four weeks for a response from our editorial team.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-[#e4e2dd] dark:bg-[#121212] font-['Work_Sans'] leading-relaxed full-width rounded-none mt-40 tonal shift to surface-container-highest with sand-grain texture flat no shadows tactile editorial flow grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-24 max-w-screen-2xl mx-auto relative border-t border-transparent">
+<div class="md:col-span-1 flex flex-col items-start">
+<div class="font-['Newsreader'] italic text-4xl text-[#00342b] dark:text-[#004d40] mb-6">Ruhaniyat</div>
+<p class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm mt-auto">&copy; 2024 Ruhaniyat. A Sanctuary for the Soul.</p>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">Explore</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../categories/categories.html">Visuals</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">About</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Editorial</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Manifesto</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../home/index.html">Company</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../connect/connect.html">Contact</a>
+</div>
+</footer>
+<script>
+// Form Submission Handler
+const contactForm = document.getElementById('contact-form');
+const formMessage = document.getElementById('form-message');
+const submitBtn = document.getElementById('submit-btn');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value.trim();
+    
+    // Validation
+    if (!name || !email || !subject || !message) {
+      showMessage('Please fill in all fields.', 'error');
+      return;
+    }
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      showMessage('Please enter a valid email address.', 'error');
+      return;
+    }
+    
+    // Message length check
+    if (message.length < 10) {
+      showMessage('Message must be at least 10 characters.', 'error');
+      return;
+    }
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    
+    // Simulate submission
+    setTimeout(() => {
+      // Success feedback
+      showMessage('Your message has been sent successfully! We\'ll be in touch soon.', 'success');
+      
+      // Reset form
+      contactForm.reset();
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Dispatch';
+      
+      // Clear message after 5 seconds
+      setTimeout(() => {
+        formMessage.style.display = 'none';
+      }, 5000);
+    }, 1200);
+  });
+}
+
+function showMessage(text, type) {
+  formMessage.textContent = text;
+  formMessage.style.display = 'block';
+  
+  if (type === 'success') {
+    formMessage.className = 'p-4 mb-4 rounded-md text-sm font-label bg-green-100 text-green-800';
+  } else {
+    formMessage.className = 'p-4 mb-4 rounded-md text-sm font-label bg-red-100 text-red-800';
+  }
+}
+</script>
+</body></html>

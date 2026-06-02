@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ruhaniyat - Index</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Sand grain overlay */
+        .sand-grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#fbf9f4",
+                    "surface-container-highest": "#e4e2dd",
+                    "tertiary-container": "#693527",
+                    "surface-container": "#f0eee9",
+                    "outline-variant": "#bfc9c4",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#464743",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#ffdbd1",
+                    "on-primary-container": "#7ebdac",
+                    "inverse-primary": "#94d3c1",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "inverse-surface": "#30312e",
+                    "primary-fixed-dim": "#94d3c1",
+                    "primary-container": "#004d40",
+                    "on-tertiary-container": "#e89f8c",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#e4e2dd",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-fixed": "#1b1c19",
+                    "surface-tint": "#29695b",
+                    "on-tertiary-fixed-variant": "#6d382a",
+                    "on-secondary-container": "#61615d",
+                    "on-background": "#1b1c19",
+                    "primary-fixed": "#afefdd",
+                    "on-primary-fixed-variant": "#065043",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb5a1",
+                    "surface-container-low": "#f5f3ee",
+                    "on-tertiary-fixed": "#370e04",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#3f4945",
+                    "surface-variant": "#e4e2dd",
+                    "primary": "#00342b",
+                    "secondary": "#5e5f5b",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dbdad5",
+                    "secondary-container": "#deddd8",
+                    "tertiary": "#4e2013",
+                    "surface-bright": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#00201a",
+                    "outline": "#707975",
+                    "surface": "#fbf9f4",
+                    "on-surface": "#1b1c19"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Newsreader"
+                    ],
+                    "display": [
+                            "Newsreader"
+                    ],
+                    "body": [
+                            "Work Sans"
+                    ],
+                    "label": [
+                            "Work Sans"
+                    ]
+            },
+            "fontSize": {}
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container">
+<div class="sand-grain-overlay"></div>
+<!-- TopNavBar -->
+<nav class="bg-[#fbf9f4]/80 dark:bg-[#1b1c19]/80 backdrop-blur-xl docked full-width top-0 z-50 tonal transition using surface-container-low shadow-none flex justify-between items-center w-full px-12 py-8 max-w-screen-2xl mx-auto sticky">
+<a class="font-['Newsreader'] italic text-3xl text-[#00342b] dark:text-[#004d40]" href="../home/index.html">Ruhaniyat</a>
+<div class="hidden md:flex gap-12">
+<a class="text-[#00342b] dark:text-[#004d40] border-b border-[#00342b]/10 pb-1 hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out font-['Work_Sans'] text-sm uppercase tracking-widest" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../categories/categories.html">Visuals</a>
+</div>
+<a href="../search/search.html" class="text-[#00342b] dark:text-[#004d40] hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out">
+<span class="material-symbols-outlined">search</span>
+</a>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-48 pb-32 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto">
+<!-- Hero Index Header -->
+<header class="mb-32 max-w-4xl">
+<p class="font-label text-sm uppercase tracking-[0.2em] text-primary mb-8 ml-2">Curated Themes</p>
+<h1 class="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95] text-on-surface font-light">
+                The Index.
+            </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant mt-12 leading-relaxed max-w-2xl font-light">
+                An archival taxonomy of thought, space, and silence. Explore the sanctuary through thematic collections meticulously curated for contemplative minds.
+            </p>
+</header>
+<!-- Asymmetric Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-24">
+<!-- Item 1: Large Featured -->
+<div class="md:col-span-8 group cursor-pointer relative">
+<div class="absolute -inset-4 bg-surface-container-low opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out z-0"></div>
+<div class="relative z-10">
+<div class="w-full aspect-[16/9] overflow-hidden bg-surface-container-highest mb-8">
+<img alt="Silence Theme" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2s] ease-out mix-blend-multiply opacity-90" src="images/silence.jpg"/>
+</div>
+<div class="flex items-end justify-between px-2">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface group-hover:text-primary transition-colors duration-500">Silence</h2>
+<p class="font-body text-on-surface-variant mt-4 text-sm tracking-wide">The architecture of quietude.</p>
+</div>
+<span class="font-label text-xs text-outline-variant tracking-widest">42 ENTRIES</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Vertical Profile -->
+<div class="md:col-span-4 md:mt-32 group cursor-pointer relative">
+<div class="absolute -inset-4 bg-surface-container-low opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out z-0"></div>
+<div class="relative z-10 flex flex-col h-full">
+<div class="w-full aspect-[3/4] overflow-hidden bg-surface-container-highest mb-8 order-2 md:order-1 mt-8 md:mt-0">
+<img alt="Architecture Theme" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2s] ease-out mix-blend-multiply opacity-90" src="images/architecture.jpg"/>
+</div>
+<div class="order-1 md:order-2 px-2 flex flex-row md:flex-col justify-between items-center md:items-start">
+<div>
+<h2 class="font-headline text-3xl md:text-4xl text-on-surface group-hover:text-primary transition-colors duration-500">Architecture</h2>
+<p class="font-body text-on-surface-variant mt-2 text-sm tracking-wide hidden md:block">Forms that define space.</p>
+</div>
+<span class="font-label text-xs text-outline-variant tracking-widest mt-0 md:mt-6">18 ENTRIES</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Standard Square -->
+<div class="md:col-span-4 group cursor-pointer relative">
+<div class="absolute -inset-4 bg-surface-container-low opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out z-0"></div>
+<div class="relative z-10">
+<div class="w-full aspect-square overflow-hidden bg-surface-container-highest mb-6">
+<img alt="Solitude Theme" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2s] ease-out mix-blend-multiply opacity-90" src="images/solitude.jpg"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-baseline border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors duration-500">Solitude</h2>
+<span class="font-label text-xs text-outline-variant tracking-widest">24 ENTRIES</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: Standard Square -->
+<div class="md:col-span-4 md:mt-16 group cursor-pointer relative">
+<div class="absolute -inset-4 bg-surface-container-low opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out z-0"></div>
+<div class="relative z-10">
+<div class="w-full aspect-square overflow-hidden bg-surface-container-highest mb-6">
+<img alt="Light Theme" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2s] ease-out mix-blend-multiply opacity-90" src="images/light.jpg"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-baseline border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors duration-500">Light</h2>
+<span class="font-label text-xs text-outline-variant tracking-widest">31 ENTRIES</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 5: Standard Square -->
+<div class="md:col-span-4 md:mt-32 group cursor-pointer relative">
+<div class="absolute -inset-4 bg-surface-container-low opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out z-0"></div>
+<div class="relative z-10">
+<div class="w-full aspect-square overflow-hidden bg-surface-container-highest mb-6">
+<img alt="Nature Theme" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2s] ease-out mix-blend-multiply opacity-90" src="images/nature.jpg"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-baseline border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors duration-500">Nature</h2>
+<span class="font-label text-xs text-outline-variant tracking-widest">56 ENTRIES</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#e4e2dd] dark:bg-[#121212] font-['Work_Sans'] leading-relaxed full-width rounded-none mt-40 tonal shift to surface-container-highest with sand-grain texture flat no shadows tactile editorial flow grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-24 max-w-screen-2xl mx-auto relative border-t border-transparent">
+<div class="md:col-span-1 flex flex-col items-start">
+<div class="font-['Newsreader'] italic text-4xl text-[#00342b] dark:text-[#004d40] mb-6">Ruhaniyat</div>
+<p class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm mt-auto">&copy; 2024 Ruhaniyat. A Sanctuary for the Soul.</p>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">Explore</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../categories/categories.html">Visuals</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">About</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Editorial</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Manifesto</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../home/index.html">Company</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../connect/connect.html">Contact</a>
+</div>
+</footer>
+</body></html>

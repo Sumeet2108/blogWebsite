@@ -1,0 +1,13 @@
+{
+  "projectId": "12728716464709867907",
+  "screenId": "abad08dc427f41789bd710e372473f09",
+  "files": {
+    "html": "stitch/essays/essays.html",
+    "screenshot": "stitch/essays/essays-screenshot.png",
+    "images": [
+      "stitch/essays/images/concrete.jpg",
+      "stitch/essays/images/book.jpg",
+      "stitch/essays/images/moor.jpg"
+    ]
+  }
+}

@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Article - Ruhaniyat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#fbf9f4",
+                      "surface-container-highest": "#e4e2dd",
+                      "tertiary-container": "#693527",
+                      "surface-container": "#f0eee9",
+                      "outline-variant": "#bfc9c4",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#464743",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed": "#ffdbd1",
+                      "on-primary-container": "#7ebdac",
+                      "inverse-primary": "#94d3c1",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#c7c6c2",
+                      "inverse-surface": "#30312e",
+                      "primary-fixed-dim": "#94d3c1",
+                      "primary-container": "#004d40",
+                      "on-tertiary-container": "#e89f8c",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#e4e2dd",
+                      "surface-container-high": "#eae8e3",
+                      "on-secondary-fixed": "#1b1c19",
+                      "surface-tint": "#29695b",
+                      "on-tertiary-fixed-variant": "#6d382a",
+                      "on-secondary-container": "#61615d",
+                      "on-background": "#1b1c19",
+                      "primary-fixed": "#afefdd",
+                      "on-primary-fixed-variant": "#065043",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb5a1",
+                      "surface-container-low": "#f5f3ee",
+                      "on-tertiary-fixed": "#370e04",
+                      "inverse-on-surface": "#f2f1ec",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#3f4945",
+                      "surface-variant": "#e4e2dd",
+                      "primary": "#00342b",
+                      "secondary": "#5e5f5b",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#dbdad5",
+                      "secondary-container": "#deddd8",
+                      "tertiary": "#4e2013",
+                      "surface-bright": "#fbf9f4",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#00201a",
+                      "outline": "#707975",
+                      "surface": "#fbf9f4",
+                      "on-surface": "#1b1c19"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Newsreader", "serif"
+                      ],
+                      "display": [
+                              "Newsreader", "serif"
+                      ],
+                      "body": [
+                              "Work Sans", "sans-serif"
+                      ],
+                      "label": [
+                              "Work Sans", "sans-serif"
+                      ]
+              },
+              "fontSize": {}
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body antialiased min-h-screen relative selection:bg-primary-container selection:text-on-primary-container">
+<div class="noise-overlay"></div>
+<!-- TopNavBar Component -->
+<nav class="bg-[#fbf9f4]/80 dark:bg-[#1b1c19]/80 backdrop-blur-xl docked full-width top-0 z-50 tonal transition using surface-container-low shadow-none flex justify-between items-center w-full px-12 py-8 max-w-screen-2xl mx-auto sticky">
+<a class="font-['Newsreader'] italic text-3xl text-[#00342b] dark:text-[#004d40]" href="../home/index.html">Ruhaniyat</a>
+<div class="hidden md:flex gap-12">
+<a class="text-[#00342b] dark:text-[#004d40] border-b border-[#00342b]/10 pb-1 hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out font-['Work_Sans'] text-sm uppercase tracking-widest" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../categories/categories.html">Visuals</a>
+</div>
+<a href="../search/search.html" class="text-[#00342b] dark:text-[#004d40] hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out">
+<span class="material-symbols-outlined">search</span>
+</a>
+</nav>
+<main class="pt-32 pb-24 relative z-10">
+<!-- Article Header & Hero -->
+<article class="max-w-[1200px] mx-auto px-6 lg:px-12">
+<header class="mb-16 md:mb-24 flex flex-col items-center text-center">
+<div class="mb-6">
+<span class="font-label text-sm uppercase tracking-widest text-primary font-medium">Essays â€¢ Reflection</span>
+</div>
+<h1 class="font-display text-5xl md:text-7xl font-light tracking-tight text-on-surface leading-tight mb-8 max-w-4xl">
+                    The Geometry of Silence: Tracing Meaning in Empty Spaces
+                </h1>
+<div class="font-label text-base text-on-surface-variant flex items-center gap-4">
+<span class="font-medium text-on-surface">By Ayesha Khan</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>October 24, 2024</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>12 min read</span>
+</div>
+</header>
+<div class="w-full h-[512px] md:h-[716px] mb-20 md:mb-32 relative overflow-hidden rounded-lg bg-surface-container-low">
+<img alt="Hero image" class="w-full h-full object-cover object-center" src="images/hero.jpg"/>
+</div>
+<!-- Article Content -->
+<div class="max-w-3xl mx-auto font-body text-lg md:text-xl leading-[1.8] text-on-surface space-y-12">
+<p class="first-letter:font-display first-letter:text-7xl first-letter:float-left first-letter:mr-4 first-letter:-mt-2 first-letter:text-primary">
+                    There is a profound architecture to silence. It is not merely the absence of sound, but a tangible substance that fills the spaces between our thoughts, much like the mortar between bricks. In a world increasingly saturated with visual and auditory noise, seeking out these empty spaces has become less of a luxury and more of an existential necessity.
+                </p>
+<p>
+                    When we observe the traditional courtyards of ancient homes, we see this principle made manifest in stone and light. The central void is the heart of the dwellingâ€”a space deliberately left empty so that the sky might be framed, and the inhabitants might have a quiet center to orbit. It is in this emptiness that meaning is allowed to breathe.
+                </p>
+<h2 class="font-display text-3xl md:text-4xl text-on-surface mt-16 mb-8 font-normal">The Texture of Time</h2>
+<p>
+                    Consider the way light moves across a textured wall throughout the day. It is a slow, silent performance. The raking sunlight reveals imperfections, transforming a flat surface into a topographical map of time's passage. We must learn to read these subtle shifts, for they are the true measures of our days, not the frantic ticking of a clock.
+                </p>
+<blockquote class="my-16 pl-8 border-l-[3px] border-primary/30 relative">
+<p class="font-headline text-2xl md:text-3xl italic text-on-surface leading-relaxed">
+                        "To appreciate the vessel, we must look not at the clay, but at the empty space it encloses. The void is where its utility resides."
+                    </p>
+</blockquote>
+<p>
+                    As we navigate our digital sanctuaries, we must remember to design for pauses. An interface, much like a physical room, needs corners where the eye can rest. A layout packed with information is like a room filled with shouting voices; an interface with generous white space is a room where a quiet conversation can unfold.
+                </p>
+<!-- Full bleed image break -->
+</div>
+<div class="w-[100vw] relative left-1/2 -translate-x-1/2 my-24 h-[614px]">
+<img alt="Secondary article image" class="w-full h-full object-cover" src="images/steps.jpg"/>
+</div>
+<div class="max-w-3xl mx-auto font-body text-lg md:text-xl leading-[1.8] text-on-surface space-y-12">
+<p>
+                    Ultimately, the pursuit of silence is the pursuit of self. When the external stimuli are stripped away, what remains is the resonant frequency of our own being. It is a terrifying and beautiful confrontation, one that requires the courage to sit in the empty space and simply listen.
+                </p>
+<div class="pt-16 pb-8 border-b border-surface-container-highest/50 flex justify-between items-center">
+<div class="flex gap-4">
+<span class="text-sm font-label text-on-surface-variant bg-surface-container px-3 py-1 rounded">Architecture</span>
+<span class="text-sm font-label text-on-surface-variant bg-surface-container px-3 py-1 rounded">Philosophy</span>
+</div>
+<div class="flex gap-4 text-on-surface-variant">
+<button id="share-btn" class="hover:text-primary transition-colors" title="Share article"><span class="material-symbols-outlined" data-icon="share">share</span></button>
+<button id="bookmark-btn" class="hover:text-primary transition-colors" title="Bookmark article"><span class="material-symbols-outlined" data-icon="bookmark">bookmark</span></button>
+</div>
+</div>
+</div>
+</article>
+<!-- Further Exploration Section -->
+<section class="max-w-[1400px] mx-auto px-6 lg:px-12 mt-32">
+<h3 class="font-display text-4xl mb-16 text-center">Further Exploration</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<a class="group block bg-surface-container-lowest p-8 hover:bg-surface-container-low transition-colors duration-500" href="../article-template/article-template.html">
+<div class="aspect-[4/3] w-full overflow-hidden mb-8 bg-surface-container">
+<img alt="Article thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="images/thumbnail-1.jpg"/>
+</div>
+<div class="font-label text-xs uppercase tracking-widest text-primary mb-4">Journeys</div>
+<h4 class="font-display text-2xl leading-snug text-on-surface mb-4">The Alleyways of Memory: Walking Through Time</h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2">How physical movement through ancient spaces shapes our internal narrative.</p>
+</a>
+<!-- Card 2 -->
+<a class="group block bg-surface-container-lowest p-8 hover:bg-surface-container-low transition-colors duration-500 md:mt-12" href="../article-template/article-template.html">
+<div class="aspect-[4/3] w-full overflow-hidden mb-8 bg-surface-container">
+<img alt="Article thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="images/thumbnail-2.jpg"/>
+</div>
+<div class="font-label text-xs uppercase tracking-widest text-primary mb-4">The Archive</div>
+<h4 class="font-display text-2xl leading-snug text-on-surface mb-4">Tactile Ephemera: Preserving the Fragile</h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2">A look into the meticulous process of archiving decaying manuscripts.</p>
+</a>
+<!-- Card 3 -->
+<a class="group block bg-surface-container-lowest p-8 hover:bg-surface-container-low transition-colors duration-500 lg:mt-24" href="../article-template/article-template.html">
+<div class="aspect-[4/3] w-full overflow-hidden mb-8 bg-surface-container">
+<img alt="Article thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="images/thumbnail-3.jpg"/>
+</div>
+<div class="font-label text-xs uppercase tracking-widest text-primary mb-4">Visuals</div>
+<h4 class="font-display text-2xl leading-snug text-on-surface mb-4">Fluid Geometries: Light on Water</h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2">A photographic study of impermanence and reflection.</p>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-[#e4e2dd] dark:bg-[#121212] font-['Work_Sans'] leading-relaxed full-width rounded-none mt-40 tonal shift to surface-container-highest with sand-grain texture flat no shadows tactile editorial flow grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-24 max-w-screen-2xl mx-auto relative border-t border-transparent">
+<div class="md:col-span-1 flex flex-col items-start">
+<div class="font-['Newsreader'] italic text-4xl text-[#00342b] dark:text-[#004d40] mb-6">Ruhaniyat</div>
+<p class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm mt-auto">&copy; 2024 Ruhaniyat. A Sanctuary for the Soul.</p>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">Explore</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../categories/categories.html">Visuals</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">About</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Editorial</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Manifesto</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../home/index.html">Company</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../connect/connect.html">Contact</a>
+</div>
+</footer>
+<script>
+// Share and Bookmark Functionality
+const shareBtn = document.getElementById('share-btn');
+const bookmarkBtn = document.getElementById('bookmark-btn');
+const articleTitle = document.querySelector('h1')?.textContent || 'Ruhaniyat Article';
+const articleUrl = window.location.href;
+
+// Share Button Handler
+if (shareBtn) {
+  shareBtn.addEventListener('click', () => {
+    // Check if browser supports Web Share API
+    if (navigator.share) {
+      navigator.share({
+        title: articleTitle,
+        text: 'Check out this article from Ruhaniyat',
+        url: articleUrl
+      }).catch(err => console.log('Share error:', err));
+    } else {
+      // Fallback: Copy to clipboard
+      copyToClipboard(articleUrl);
+      showNotification('Article link copied to clipboard!');
+    }
+  });
+}
+
+// Bookmark Button Handler
+if (bookmarkBtn) {
+  const bookmarkKey = 'bookmarked_articles';
+  const shareIcon = shareBtn?.querySelector('.material-symbols-outlined');
+  const bookmarkIcon = bookmarkBtn?.querySelector('.material-symbols-outlined');
+  
+  // Check if bookmarked on page load
+  const bookmarkedArticles = JSON.parse(localStorage.getItem(bookmarkKey) || '{}');
+  if (bookmarkedArticles[articleUrl]) {
+    bookmarkBtn.classList.add('text-primary');
+    bookmarkIcon.textContent = 'bookmark';
+    bookmarkIcon.style.fontVariationSettings = '"FILL" 1';
+  }
+  
+  bookmarkBtn.addEventListener('click', () => {
+    const bookmarked = bookmarkedArticles[articleUrl];
+    
+    if (bookmarked) {
+      // Remove bookmark
+      delete bookmarkedArticles[articleUrl];
+      bookmarkBtn.classList.remove('text-primary');
+      bookmarkIcon.style.fontVariationSettings = '"FILL" 0';
+      showNotification('Bookmark removed');
+    } else {
+      // Add bookmark
+      bookmarkedArticles[articleUrl] = {
+        title: articleTitle,
+        savedAt: new Date().toISOString()
+      };
+      bookmarkBtn.classList.add('text-primary');
+      bookmarkIcon.style.fontVariationSettings = '"FILL" 1';
+      showNotification('Article bookmarked!');
+    }
+    
+    localStorage.setItem(bookmarkKey, JSON.stringify(bookmarkedArticles));
+  });
+}
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).catch(err => console.error('Copy error:', err));
+}
+
+function showNotification(message) {
+  // Create and show notification
+  const notification = document.createElement('div');
+  notification.textContent = message;
+  notification.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #00342b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 9999;
+    animation: slideIn 0.3s ease-out;
+  `;
+  document.body.appendChild(notification);
+  
+  // Auto-remove after 3 seconds
+  setTimeout(() => {
+    notification.style.animation = 'slideOut 0.3s ease-out';
+    setTimeout(() => notification.remove(), 300);
+  }, 3000);
+}
+
+// Add animations
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes slideIn {
+    from {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideOut {
+    to {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+  }
+`;
+document.head.appendChild(style);
+</script>
+</body></html>

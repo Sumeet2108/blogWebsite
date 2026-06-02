@@ -1,0 +1,15 @@
+{
+  "projectId": "12728716464709867907",
+  "screenId": "612f15a8a689422cbf31a01b47b596f0",
+  "files": {
+    "html": "stitch/archive/archive.html",
+    "screenshot": "stitch/archive/archive-screenshot.png",
+    "images": [
+      "stitch/archive/images/cabin.jpg",
+      "stitch/archive/images/sand.jpg",
+      "stitch/archive/images/boat.jpg",
+      "stitch/archive/images/architecture.jpg",
+      "stitch/archive/images/waves.jpg"
+    ]
+  }
+}

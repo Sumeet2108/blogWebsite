@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ruhaniyat - Search</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#fbf9f4",
+                        "surface-container-highest": "#e4e2dd",
+                        "tertiary-container": "#693527",
+                        "surface-container": "#f0eee9",
+                        "outline-variant": "#bfc9c4",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#464743",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-primary-container": "#7ebdac",
+                        "inverse-primary": "#94d3c1",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "inverse-surface": "#30312e",
+                        "primary-fixed-dim": "#94d3c1",
+                        "primary-container": "#004d40",
+                        "on-tertiary-container": "#e89f8c",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#e4e2dd",
+                        "surface-container-high": "#eae8e3",
+                        "on-secondary-fixed": "#1b1c19",
+                        "surface-tint": "#29695b",
+                        "on-tertiary-fixed-variant": "#6d382a",
+                        "on-secondary-container": "#61615d",
+                        "on-background": "#1b1c19",
+                        "primary-fixed": "#afefdd",
+                        "on-primary-fixed-variant": "#065043",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb5a1",
+                        "surface-container-low": "#f5f3ee",
+                        "on-tertiary-fixed": "#370e04",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#3f4945",
+                        "surface-variant": "#e4e2dd",
+                        "primary": "#00342b",
+                        "secondary": "#5e5f5b",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "secondary-container": "#deddd8",
+                        "tertiary": "#4e2013",
+                        "surface-bright": "#fbf9f4",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#00201a",
+                        "outline": "#707975",
+                        "surface": "#fbf9f4",
+                        "on-surface": "#1b1c19"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "display": ["Newsreader"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    },
+                    "fontSize": {}
+                },
+            },
+        }
+    </script>
+<style>
+        .texture-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary">
+<div class="texture-overlay"></div>
+<!-- TopNavBar -->
+<nav class="bg-[#fbf9f4]/80 dark:bg-[#1b1c19]/80 backdrop-blur-xl docked full-width top-0 z-50 tonal transition using surface-container-low shadow-none flex justify-between items-center w-full px-12 py-8 max-w-screen-2xl mx-auto sticky">
+<a class="font-['Newsreader'] italic text-3xl text-[#00342b] dark:text-[#004d40]" href="../home/index.html">Ruhaniyat</a>
+<div class="hidden md:flex gap-12">
+<a class="text-[#00342b] dark:text-[#004d40] border-b border-[#00342b]/10 pb-1 hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out font-['Work_Sans'] text-sm uppercase tracking-widest" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 font-['Work_Sans'] text-sm uppercase tracking-widest hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out" href="../categories/categories.html">Visuals</a>
+</div>
+<a href="../search/search.html" class="text-[#00342b] dark:text-[#004d40] hover:text-[#00342b] dark:hover:text-[#004d40] transition-all duration-500 ease-in-out">
+<span class="material-symbols-outlined">search</span>
+</a>
+</nav>
+<main class="pt-40 pb-32 px-6 md:px-12 max-w-screen-xl mx-auto">
+<!-- Search Header -->
+<section class="mb-24 relative">
+<h1 class="font-display text-5xl md:text-7xl lg:text-[5.5rem] leading-none tracking-[-0.02em] text-on-surface mb-12">
+                Query the <br/>
+<span class="text-primary italic">Archive</span>
+</h1>
+<div class="relative max-w-4xl">
+<div class="absolute bottom-0 left-0 w-full h-[1px] bg-outline-variant opacity-30"></div>
+<div class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-500 peer-focus:w-full"></div>
+<div class="flex items-end gap-6 pb-4">
+<span class="material-symbols-outlined text-3xl text-outline-variant pb-2">history_edu</span>
+<input autofocus="" class="w-full bg-transparent border-none p-0 text-3xl md:text-4xl font-headline text-on-surface placeholder:text-outline-variant/60 focus:ring-0 peer transition-colors" placeholder="Seek themes, places, or authors..." type="text"/>
+<button class="text-primary opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pb-2">
+<span class="material-symbols-outlined text-3xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="mt-8 flex flex-wrap gap-4 font-label text-sm tracking-wide">
+<span class="text-outline">Suggested:</span>
+<a class="text-on-surface hover:text-primary border-b border-transparent hover:border-primary transition-colors pb-1" href="search.html?q=Sufi%20Mysticism">Sufi Mysticism</a>
+<a class="text-on-surface hover:text-primary border-b border-transparent hover:border-primary transition-colors pb-1" href="search.html?q=Anatolia">Anatolia</a>
+<a class="text-on-surface hover:text-primary border-b border-transparent hover:border-primary transition-colors pb-1" href="search.html?q=Rumi%27s%20Poetry">Rumi's Poetry</a>
+<a class="text-on-surface hover:text-primary border-b border-transparent hover:border-primary transition-colors pb-1" href="search.html?q=Architecture">Architecture</a>
+</div>
+</section>
+<!-- Search Results Area -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24 relative">
+<!-- Filters Sidebar -->
+<aside class="lg:col-span-3">
+<div class="sticky top-40 bg-surface-container-low p-8 rounded-lg">
+<h3 class="font-display text-xl mb-8 border-b border-outline-variant/20 pb-4">Refine</h3>
+<div class="space-y-8">
+<div>
+<h4 class="font-label text-xs tracking-[0.1em] text-outline uppercase mb-4">Format</h4>
+<div class="space-y-3 font-body text-sm">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-sm focus:ring-primary focus:ring-offset-surface-container-low" type="checkbox"/>
+<span class="text-on-surface-variant group-hover:text-primary transition-colors">Essays</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="form-checkbox bg-transparent border-outline-variant text-primary rounded-sm focus:ring-primary focus:ring-offset-surface-container-low" type="checkbox"/>
+<span class="text-on-surface-variant group-hover:text-primary transition-colors">Visual Journals</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-outline-variant text-primary rounded-sm focus:ring-primary focus:ring-offset-surface-container-low" type="checkbox"/>
+<span class="text-on-surface-variant group-hover:text-primary transition-colors">Audio Fragments</span>
+</label>
+</div>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-[0.1em] text-outline uppercase mb-4">Era</h4>
+<div class="space-y-3 font-body text-sm">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="form-radio bg-transparent border-outline-variant text-primary focus:ring-primary focus:ring-offset-surface-container-low" name="era" type="radio"/>
+<span class="text-on-surface-variant group-hover:text-primary transition-colors">All Time</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio bg-transparent border-outline-variant text-primary focus:ring-primary focus:ring-offset-surface-container-low" name="era" type="radio"/>
+<span class="text-on-surface-variant group-hover:text-primary transition-colors">12th Century</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio bg-transparent border-outline-variant text-primary focus:ring-primary focus:ring-offset-surface-container-low" name="era" type="radio"/>
+<span class="text-on-surface-variant group-hover:text-primary transition-colors">13th Century</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Results List -->
+<div class="lg:col-span-9 space-y-24">
+<!-- Result Item 1 -->
+<article class="group relative flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+<div class="w-full md:w-1/3 relative shrink-0">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-lg">
+<img alt="Archway" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="A softly lit interior view of ancient stone arches in a Moroccan riad. The walls are constructed of warm, textured sandstone, catching the late afternoon sunlight. The composition is highly symmetrical, drawing the eye deep into the shaded courtyards beyond. The aesthetic is serene, tactile, and deeply historical, bathed in the rich desert teal and warm sand color palette of the sanctuary." src="images/archway.jpg"/>
+</div>
+<div class="absolute -top-4 -left-4 bg-surface px-4 py-2 text-xs font-label tracking-widest uppercase text-primary border border-outline-variant/20">Visual</div>
+</div>
+<div class="w-full md:w-2/3 flex flex-col justify-center pt-4 md:pt-12">
+<div class="flex items-center gap-4 text-sm font-label text-outline mb-6">
+<span>Oct 12, 2023</span>
+<span class="w-8 h-[1px] bg-outline-variant"></span>
+<span>Konya, Turkey</span>
+</div>
+<h2 class="font-display text-3xl md:text-4xl text-on-surface leading-tight mb-6 group-hover:text-primary transition-colors duration-300">
+<a class="before:absolute before:inset-0" href="../article-template/article-template.html">
+                                The Geometry of the Soul: Patterns in Seljuk Architecture
+                            </a>
+</h2>
+<p class="font-body text-base md:text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                            Exploring the mathematical precision and spiritual intention woven into the tile work of 13th-century Anatolia. Every polygon speaks to a desire to map the infinite within a finite space.
+                        </p>
+<div class="mt-8 flex items-center gap-2 text-primary font-label text-sm tracking-wide">
+<span class="border-b border-primary/30 group-hover:border-primary transition-colors pb-1">Read Journal</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform duration-300">east</span>
+</div>
+</div>
+</article>
+<!-- Result Item 2 (No Image) -->
+<article class="group relative flex flex-col md:flex-row gap-8 md:gap-16 items-start bg-surface-container-low p-8 md:p-12 rounded-lg ml-0 md:ml-12">
+<div class="w-full flex flex-col justify-center">
+<div class="flex items-center gap-4 text-sm font-label text-outline mb-6">
+<span>Sep 04, 2023</span>
+<span class="w-8 h-[1px] bg-outline-variant"></span>
+<span class="text-primary">Essay</span>
+</div>
+<h2 class="font-display text-3xl md:text-4xl text-on-surface leading-tight mb-6 group-hover:text-primary transition-colors duration-300">
+<a class="before:absolute before:inset-0" href="../article-template/article-template.html">
+                                Silence as Dialect: The Unspoken Spaces in Rumi's Masnavi
+                            </a>
+</h2>
+<p class="font-body text-base md:text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+                            Before the poetry begins, there is the pause. This essay dissects the intentional voids left by the poetâ€”the spaces where language fails and the reader is invited to enter the quietude of direct experience.
+                        </p>
+</div>
+</article>
+<!-- Result Item 3 -->
+<article class="group relative flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+<div class="w-full md:w-1/3 relative shrink-0 md:order-last">
+<div class="aspect-square bg-surface-container overflow-hidden rounded-full">
+<img alt="Manuscript" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="A close-up, highly detailed view of an ancient illuminated manuscript resting on a weathered wooden table. The calligraphy is flowing and precise, penned in deep charcoal ink with subtle accents of faded gold leaf. Soft, warm directional light casts gentle shadows across the textured, deckled edges of the heavy parchment paper. The mood is studious, quiet, and deeply grounded in history." src="images/manuscript.jpg"/>
+</div>
+</div>
+<div class="w-full md:w-2/3 flex flex-col justify-center pt-4 md:pt-12 md:text-right md:items-end">
+<div class="flex items-center justify-end gap-4 text-sm font-label text-outline mb-6">
+<span>Archive Fragment</span>
+<span class="w-8 h-[1px] bg-outline-variant"></span>
+<span>Aug 21, 2023</span>
+</div>
+<h2 class="font-display text-3xl md:text-4xl text-on-surface leading-tight mb-6 group-hover:text-primary transition-colors duration-300">
+<a class="before:absolute before:inset-0" href="../article-template/article-template.html">
+                Restoring the Indigo Inks of Herat
+              </a>
+</h2>
+<p class="font-body text-base md:text-lg text-on-surface-variant leading-relaxed max-w-xl md:text-right">
+                            A technical look into the preservation of 15th-century pigments. The process of binding lapis lazuli to paper reveals as much about devotion as it does about chemistry.
+                        </p>
+</div>
+</article>
+</div>
+</section>
+<!-- Pagination -->
+<div class="mt-32 flex justify-center items-center gap-8 font-label text-lg" id="pagination-container">
+<button id="prev-btn" class="text-outline hover:text-primary transition-colors disabled:opacity-30 flex items-center gap-2" disabled="">
+<span class="material-symbols-outlined text-xl">arrow_back</span>
+<span class="text-sm tracking-widest uppercase">Prev</span>
+</button>
+<div class="flex gap-4 text-on-surface-variant" id="page-numbers">
+<span class="page-number active text-primary font-bold border-b border-primary" data-page="1">1</span>
+<a class="page-number hover:text-primary transition-colors" href="#" data-page="2">2</a>
+<a class="page-number hover:text-primary transition-colors" href="#" data-page="3">3</a>
+<span class="page-ellipsis">...</span>
+<a class="page-number hover:text-primary transition-colors" href="#" data-page="8">8</a>
+</div>
+<button id="next-btn" class="text-outline hover:text-primary transition-colors flex items-center gap-2">
+<span class="text-sm tracking-widest uppercase">Next</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#e4e2dd] dark:bg-[#121212] font-['Work_Sans'] leading-relaxed full-width rounded-none mt-40 tonal shift to surface-container-highest with sand-grain texture flat no shadows tactile editorial flow grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-24 max-w-screen-2xl mx-auto relative border-t border-transparent">
+<div class="md:col-span-1 flex flex-col items-start">
+<div class="font-['Newsreader'] italic text-4xl text-[#00342b] dark:text-[#004d40] mb-6">Ruhaniyat</div>
+<p class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm mt-auto">&copy; 2024 Ruhaniyat. A Sanctuary for the Soul.</p>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">Explore</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../archive/archive.html">The Archive</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Journeys</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../essays/essays.html">Essays</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../categories/categories.html">Visuals</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="text-[#00342b] font-semibold text-sm uppercase tracking-widest mb-2">About</span>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Editorial</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../philosophy/philosophy.html">Manifesto</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../home/index.html">Company</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 text-sm hover:translate-x-1 transition-transform duration-300" href="../connect/connect.html">Contact</a>
+</div>
+</footer>
+<script>
+// Search Pagination Functionality
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const pageNumbers = document.querySelectorAll('.page-number');
+let currentPage = 1;
+const totalPages = 8;
+
+// Initialize pagination
+function updatePagination() {
+  // Update Prev button state
+  if (currentPage === 1) {
+    prevBtn.disabled = true;
+    prevBtn.style.opacity = '0.3';
+  } else {
+    prevBtn.disabled = false;
+    prevBtn.style.opacity = '1';
+  }
+  
+  // Update Next button state
+  if (currentPage === totalPages) {
+    nextBtn.disabled = true;
+    nextBtn.style.opacity = '0.3';
+  } else {
+    nextBtn.disabled = false;
+    nextBtn.style.opacity = '1';
+  }
+  
+  // Update page number styles
+  pageNumbers.forEach(pageNum => {
+    const page = parseInt(pageNum.dataset.page);
+    if (page === currentPage) {
+      pageNum.classList.add('active', 'text-primary', 'font-bold', 'border-b', 'border-primary');
+      pageNum.classList.remove('hover:text-primary');
+      if (pageNum.href) pageNum.href = '#';
+    } else {
+      pageNum.classList.remove('active', 'text-primary', 'font-bold', 'border-b', 'border-primary');
+      pageNum.classList.add('hover:text-primary');
+    }
+  });
+}
+
+// Prev button click handler
+prevBtn.addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updatePagination();
+    scrollToTop();
+  }
+});
+
+// Next button click handler
+nextBtn.addEventListener('click', () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    updatePagination();
+    scrollToTop();
+  }
+});
+
+// Page number click handlers
+pageNumbers.forEach(pageNum => {
+  if (pageNum.dataset.page) {
+    pageNum.addEventListener('click', (e) => {
+      e.preventDefault();
+      currentPage = parseInt(pageNum.dataset.page);
+      updatePagination();
+      scrollToTop();
+    });
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Initialize on page load
+updatePagination();
+</script>
+</body></html>
